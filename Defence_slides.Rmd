@@ -57,6 +57,10 @@ background-color: #2c5c34
 .small123 {
   font-size: 0.80em;
 }
+
+.large123 {
+  font-size: 2em;
+}
 ```
 
 # PhD Defence
@@ -73,6 +77,9 @@ background-color: #2c5c34
 *Find slides here: https://shorturl.at/eqwAI*
 ]
 
+
+???
+..large123[**---> 1 <----**]
 
 
 
@@ -99,7 +106,10 @@ knitr::include_graphics("Figures/Overview EN.png")
 ```
 ]
 
----
+???
+.large123[**---> 4 <----**]
+
+<!--
 
 
 # Overblik og motivation (Dansk)
@@ -123,10 +133,7 @@ knitr::include_graphics("Figures/Overview DA.png")
 ```
 ]
 
-
-???
-- Tak fordi I er her. Jeg snakker Engelsk om lidt igen, men her er et overblik på Dansk, som måske kan hjælpe jer lidt I at navigere.
-- Tak fordi I er her. 
+-->
 
 ---
 class: center, middle, inverse
@@ -137,7 +144,8 @@ background-color: #273a8f
 # Chapter 1:
 # A perfect storm and the natural endowments of trade-enabling infrastructure
 
-
+???
+.large123[**---> 4 <----**]
 
 ---
 
@@ -172,7 +180,7 @@ knitr::include_graphics("Figures/Petersen 1877.png")
 
 
 ???
-**3/45**  
+.large123[**---> 6 <----** ]
 - Understanding what causes wealth (wellbeing, etc.) is at the heart of Economics 
 - Understanding the interplay between geography (environment) and Economics is vital in the 21st century
 
@@ -181,13 +189,7 @@ knitr::include_graphics("Figures/Petersen 1877.png")
 ![Event2](Figures/Map.png)
 
 ???
-- This map essentially shows the entire story I am going to tell you today 
-
----
-# Map
-.center[
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d704129.7470425251!2d8.826970647896832!3d56.880787313536544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sda!2sdk!4v1634159326111!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-]
+.large123[**---> 7 <----** ]
 
 ---
 # Litterature
@@ -206,8 +208,7 @@ knitr::include_graphics("Figures/Petersen 1877.png")
 ]
 
 ???
-**SKIP THIS SLIDE**
-**JUST SHOW THAT IT EXISTS**
+.large123[**---> 7 <----** ]
 
 ---
 name: timeline
@@ -231,36 +232,31 @@ name: timeline
 
 ![Newspaper](Figures/Stenkul_from_Newcastle.PNG)
 
+???
+.large123[**---> 8 <----** ]
+
 ---
+name: empstrat1
 # Empirical strategy
 
 $$log(y_{it}) = Affected_i \times Year_t \beta_t + FE + \varepsilon_{it}$$
 
 *Affected is:*
 - The **West** Limfjord, or
-- Improved **market access** after the breach
+- Improved **market access** after the breach (requires $(\alpha,\,\theta)$)
+
+.footnote[
+[Click here for details](#MAmath)
+]
+
+???
+.large123[**---> 9 <----** ]
 
 ---
 ![Event](Figures/Map.png)
 
----
-# Market Access
-.pull-left[
-Based on cost distance from parishes to harbours: 
-$${MA}_p = \sum_{h \in H} [CostDist(p, h) + 1]^\theta \times W_{p}$$
-- CostDist - Dijkstra's agorithm and 1/10 land/sea ratio 
-- $\theta = -1$  
-- Breach caused new harbours in West Limfjord: $H\rightarrow H^*$
-
-$$MA_{before} = MA_p|H \\
-MA_{after} = MA_p|H^*$$
-Main measure:
-$$\Delta log(MA) = log(MA_{after})-log(MA_{before})$$
-]
-
-.pull-right[
-![Event](Figures/Map.png)
-]
+???
+.large123[**---> 10 <----** ]
 
 ---
 name: str-presentation
@@ -280,6 +276,9 @@ name: str-presentation
 ![1838](Figures/1734_STR_RUG.jpg)
 *Page from Sound Toll Register in 1734 (www.rug.nl)*
 ]
+
+???
+.large123[**---> 11 <----** ]
 
 ---
 name: censusdata
@@ -301,10 +300,16 @@ name: censusdata
 
 ]
 
+???
+.large123[**---> 12 <----** ]
+
 ---
 # The channel caused trade
 
 ![Descriptive](Figures/Ship_trafic.png)
+???
+.large123[**---> 13 <----** ]
+
 ---
 name: str-results
 # The channel caused trade
@@ -326,11 +331,17 @@ knitr::include_graphics("Figures/STR_regressions - Copy.png")
 *Larger on next page*
 ]
 
+???
+.large123[**---> 13 <----** ]
+
 ---
 # The channel caused trade
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("Figures/STR_regressions - Copy.png")
 ```
+
+???
+.large123[**---> 13 <----** ]
 
 ---
 name: pop
@@ -360,33 +371,11 @@ knitr::include_graphics("Figures/pop_dummy.png")
 ]
 
 ???
+.large123[**---> 14 <----**]
 - Rauch & Maurer (2022): 2.3 for panama canal
 
 ---
-name: mechanism1
-.pull-left[
-# Mechanism
-- **Remaining questions**: 
-
-  + *Why was the take-off relatively slow?* 
-  + **Answer:** [Institutions and secondary infrastructure](#instmech) had to adapt
-
-  + *What carried the population growth?* 
-  + **Likely answer:** Fertility driven by rise of manufacturing and fishing
-]
-
-.pull-right[
-![Loading Butter](Figures/1924 Loading Butter, Esbjerg port.jpg)
-*Loading Butter in a Danish port (1924)*
-
-![dag](Figures/dag_mechanism.png)
-*DAG of the suggested mechanism* 
-]
-
-
-
----
-# Occupational structure 
+# Occupational effect in 1901 (1/2)
 
 .pull-left-wide[
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
@@ -398,10 +387,15 @@ knitr::include_graphics("Figures/All_occupations.png")
 .small123[.center[***APE share:*** *Average partial effects as share of population*]]
 ]
 
+???
+.large123[**---> 14 <----** ]
 
 ---
-# Occupational decomposition 
+# Occupational effect in 1901 (2/2)
 ![Occ_decom](Figures/Occ_decom_dummy_asi2.png)
+
+???
+.large123[**---> 15 <----** ]
 
 ---
 ### Migration and fertility
@@ -411,7 +405,7 @@ knitr::include_graphics("Figures/All_occupations.png")
 knitr::include_graphics("Figures/born_different.png")
 ```
 ]
---
+
 .pull-right[
 **Child/women ratio (ch. 1-5 years per f. 15-45):**
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
@@ -420,7 +414,8 @@ knitr::include_graphics("Figures/fertility.png")
 
 ]
 
-
+???
+.large123[**---> 15 <----**]
 
 ---
 # The reverse natural experiment
@@ -443,6 +438,9 @@ knitr::include_graphics("Figures/fertility.png")
 *maps.stamen.com*
 ]
 
+???
+.large123[**---> 17 <----**] 
+
 ---
 name: arch1
 **Plot of effect to the likelihood of a coin finding being generated**
@@ -452,6 +450,9 @@ knitr::include_graphics("Figures/arch_dummy_coins.png")
 
 [More details](#appendixarch); [Matched sample alternative](#matching_coins)
 
+???
+.large123[**---> 17 <----**] 
+
 ---
 name: arch2
 **Plot of effect to the likelihood of a building finding being generated**
@@ -460,13 +461,19 @@ knitr::include_graphics("Figures/arch_dummy_buildings.png")
 ```
 [More details](#appendixarch); [Matched sample alternative](#matching_buildings)
 
+???
+.large123[**---> 18 <----**]
+
 ---
 name: other-results
 # Conclusion 
 .pull-left[
-- **RQ:** How are we affected by geography? Does infrastructure cause development?
+- **RQ:** How are we affected by geography? 
+
 - Storm led to a channel and improved connectivity in 1834
+
 - The population grew 24 percent in a generation in affected parishes 
+
 - Trade, adaption, fertility, fishing and manufacturing 
 ]
 
@@ -478,7 +485,7 @@ knitr::include_graphics("Figures/Morsoe.jpg")
 ]
 
 ???
-**<----> 22:24 <---->**
+.large123[**---> 19 <----**] 
 
 ---
 # Overview
@@ -490,6 +497,9 @@ knitr::include_graphics("Figures/Morsoe.jpg")
 knitr::include_graphics("Figures/Overview EN.png")
 ```
 ]
+
+???
+.large123[**---> 19 <----**] 
 
 ---
 # Overview
@@ -506,6 +516,9 @@ knitr::include_graphics("Figures/Overview EN 1.png")
 ```
 ]
 
+???
+.large123[**---> 19 <----**] 
+
 ---
 class: center, middle, inverse
 background-image: url("Figures/Background_ch2.png")
@@ -518,12 +531,16 @@ background-color: #b33d3d
 
 ### Coauthored with Jeanet Bentzen, Nina Boberg-Fazlic, Paul Sharp, Christian Volmar Skovsgaard
 
+???
+.large123[**---> 19 <----**] 
+
 ---
 # Introduction
 
 .pull-left[
-- Danish industrialisation is the industrialisation of agriculture (Sharp & Lampe, 2019)
+- Danish industrialisation is also agricultural (Sharp & Lampe, 2019)
 - Portrayed as a consequence of homogeneity and lack of conflict 
+- Contrast with Ireland 
 - But did conflict and religiosity play any role for Danish development?
 - **Can non-violent religious conflicts also have adverse effects?**
 
@@ -536,28 +553,36 @@ background-color: #b33d3d
 Carl Moe, kb.dk
 ]
 
+???
+.large123[**---> 21 <----**] 
+
 ---
 # Imagine that chimney on a Sunday
 ![Chimney](Figures/Soeholm_mejeri.png)
+
+???
+.large123[**---> 22 <----**] 
 
 ---
 # Data and identification
 .pull-left[
 **Data:**
-- Newly digitized data on Mission houses, when and where they were build 
-- Operational Statistics of Creameries (Sharp et al, 2023) enriched with location 
-- Haue (1978) provides list on Sunday closed creameries 
+- Missionhouses: When and where 
+
+- Creamery statistics (Sharp et al, 2023) + location 
   + 11685 observations on 964 creameries
   + Milk, Butter, influence of IM and various controls
-- Potential influence measured as market potential of IM
-]
 
-.pull-right[
 **Empirical strategy:** 
 - Milk butter ratio: How much milk does it take to produce a unit of butter?
 
 $$MB_{it}= IM_{it}\beta_1+\mathbf{z}_{it}\gamma+FE+\varepsilon_{it}$$
 $$ln(Butter_{it})= ln(Milk_{it})\beta_1+IM_{it}\beta_2+...$$
+
+
+]
+
+.pull-right[
 
 **Bartik style instruments:**
 - Early IM would cause later IM (it is in the name) 
@@ -567,6 +592,7 @@ $$ln(Butter_{it})= ln(Milk_{it})\beta_1+IM_{it}\beta_2+...$$
 ]
 
 ???
+.large123[**---> 23 <----**] 
 What about a bad harvest?
 
 ---
@@ -574,12 +600,18 @@ What about a bad harvest?
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("Figures/Missionhouses1890.png")
 ```
+
+???
+.large123[**---> 24 <----**]
+
 ---
 # IM influence in 1920
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("Figures/Missionhouses.png")
 ```
 
+???
+.large123[**---> 24 <----**]
 
 ---
 # Results OLS
@@ -597,9 +629,8 @@ knitr::include_graphics("Figures/OLS_WP1.png")
 ```
 ]
 
-
-
-
+???
+.large123[**---> 24 <----**]
 
 ---
 # Results IV
@@ -610,7 +641,7 @@ knitr::include_graphics("Figures/IV_WP1.png")
 ]
 
 .pull-right-narrow[
-**Interpretaiton**
+**Interpretation**
 - Robust negative association between IM and productivity 
 - Large and meaningful effect size 
 - Neither instrument can be rejected
@@ -618,28 +649,30 @@ knitr::include_graphics("Figures/IV_WP1.png")
 - **Effect**: ~ -40000 (2010 USD Equiv)
 ]
 
-
+???
+.large123[**---> 24 <----**]
 
 ---
 # Mechanisms
-.pull-left[
-![DAG](figures/dag_mechanism_wp1.png)
-1. We can test whether it is carried by Sabbatical production itself 
-2. We can test whether there are 'smoking guns' of conflict 
-
-]
-
-.pull-right[
+.pull-left-narrow[
 **Results**
 - We *cannot* find that Sabbatical production had a negative impact on productivity 
 - We *can* demonstrate indicators of conflict were associated with IM
 ]
 
+.pull-right-wide[
+```{r echo=FALSE, out.width="95%", fig.align='right'}
+knitr::include_graphics("Figures/Long_meeting2.png")
+```
+]
+
+???
+.large123[**---> 25 <----**]
+
 ---
 # Conclusion 
 .pull-left[
 - Non violent religious conflict can have large negative effects on the economy (~25,000 2010 USD) 
-- Denmark industrialized in religious conflict 
 
 - *The conflict was carried with Danish migrants to the US*
 ]
@@ -650,7 +683,7 @@ Carl Moe, kb.dk
 ]
 
 ???
-**<----> 31:09 <---->**
+.large123[**---> 26 <----**]
 
 ---
 # Overview
@@ -666,6 +699,9 @@ Carl Moe, kb.dk
 knitr::include_graphics("Figures/Overview EN 1.png")
 ```
 ]
+
+???
+.large123[**---> 26 <----**]
 
 ---
 # Overview
@@ -683,6 +719,9 @@ knitr::include_graphics("Figures/Overview EN 2.png")
 ```
 ]
 
+???
+.large123[**---> 26 <----**]
+
 ---
 class: center, middle, inverse
 background-image: url("Figures/Background_ch3.png")
@@ -694,22 +733,28 @@ background-color: #DE7500
 
 ### Coauthored with Jeanet Bentzen, Nina Boberg-Fazlic, Paul Sharp, Christian Volmar Skovsgaard
 
+???
+.large123[**---> 27 <----**]
+
 ---
 # Introduction
 .pull-left[
-- IM / Grundtvig conflict would be ignited among Danish american migrants by the arrival of Grundtvig's son 
+- IM / Grundtvig conflict would be ignited among Danish american migrants by the arrival of Grundtvig's son in 1883
 - IM would promote integration and Gr would promote Danish identity 
 - Ideal case to test assimilation while keeping culture constant 
 ]
 
 .pull-right[
 ![Frederik](Figures/frederik_langes_familie.png)
-*Frederik Lange Grundtvig with family, www.danmarkshistorien.dk*
+.small123[*Frederik Lange Grundtvig with family, www.danmarkshistorien.dk*]
 ]
+
+???
+.large123[**---> 28 <----**]
 
 ---
 .pull-left[
-### Sad Danes
+### Sad Danes - Inner Mission
 (Holy Danes)
 ![Sad](Figures/Sad_Dane.png)
 - Emphasis on assimilation 
@@ -718,21 +763,30 @@ background-color: #DE7500
 ]
 
 .pull-right[
-### Happy Danes
+### Happy Danes - Grundtvigianism
 ![Happy](Figures/HappyDane.png)
 - Danish language and traditon (folkliness) 
 - Connection between belief and nationality
 ]
 
+???
+.large123[**---> 28 <----**]
+
 ---
 # Conceptual framework
 ![Conceptual](Figures/Conceptual_framework_WP2.png)
+
+*(Not a DAG)*
+
+???
+.large123[**---> 29 <----**]
 
 ---
 # Empricial strategy 
 .pull-left[
 1. Test whether the cultural split caused dissimilar rates of integration 
-  + Names and newspapers 
+  + Names and newspapers  
+
 2. Test whether this affected occupational outcomes (does assimilation matter) 
   + Occupational outcomes 
 ]
@@ -744,6 +798,7 @@ background-color: #DE7500
 ]
 
 ???
+.large123[**---> 30 <----**] 
 Jens or Jack, Brittany or Birthe 
 
 ---
@@ -761,6 +816,9 @@ knitr::include_graphics("Figures/Small_table_WP1.png")
 - Holy Danes used more American names 
 ]
 
+???
+.large123[**---> 31 <----**] 
+
 ---
 
 # Anglicization of Holy newspapers
@@ -768,11 +826,14 @@ knitr::include_graphics("Figures/Small_table_WP1.png")
 knitr::include_graphics("Figures/Anglixization_WP2.png")
 ```
 
+???
+.large123[**---> 31 <----**] 
+
 ---
 # Did this language difference cause differential occupational outcomes? 
 
 .pull-left-wide[
-```{r echo=FALSE, out.width="100%", fig.align='center'}
+```{r echo=FALSE, out.width="50%", fig.align='center'}
 knitr::include_graphics("Figures/Small_occ_WP1.png")
 ```
 ]
@@ -783,17 +844,16 @@ knitr::include_graphics("Figures/Small_occ_WP1.png")
 - Difference in terms of agricultural/nonmanual work 
 ]
 
-
+???
+.large123[**---> 32 <----**] 
 
 ---
 # Conclusion
-- Wide interest in questions of culture, migration and the labour market 
-- Typically based on comparison between nationalities 
 - Grundtvigian split caused differential integration 
 - No difference in occupational status
 
 ???
-**<----> 38:09 <----> **
+.large123[**---> 33 <----**] 
 
 ---
 # Overview
@@ -810,6 +870,9 @@ knitr::include_graphics("Figures/Small_occ_WP1.png")
 knitr::include_graphics("Figures/Overview EN 2.png")
 ```
 ]
+
+???
+.large123[**---> 33 <----**] 
 
 ---
 # Overview
@@ -828,7 +891,8 @@ knitr::include_graphics("Figures/Overview EN 3.png")
 ```
 ]
 
-
+???
+.large123[**---> 33 <----**] 
 
 ---
 class: center, middle, inverse
@@ -841,16 +905,13 @@ background-color: #2c5c34
 ## A Firm Level Productivity Analysis
 ### Coauthored with Sofia Teives Henriques, Paul Sharp, Xanthi Tsoukli
 
+???
+.large123[**---> 34 <----**] 
+
 ---
 # Overview
 .pull-left[
-### Context
-- Energy in early industrialisation 
-- Supply and stability of supply are both important 
-- Adaptability is the alternative
-
-### Story
-- WW1 + Spanish flu strained coal supplies 
+- WW1 + Spanish flu strained coal supplies (just like gas supplies today)
 - Butter factories with access to alternative fuel (peat) could adapt  
 - Productivity was kept after crisis 
 ]
@@ -863,7 +924,7 @@ background-color: #2c5c34
 
 
 ???
-**3/45**  
+.large123[**---> 35 <----**] 
 
 ---
 # Coal, butter and cooperatives 
@@ -882,11 +943,17 @@ Modern Danish Butter sold at Tescos in the UK
 ]
 ]
 
+???
+.large123[**---> 35 <----**] 
+
 ---
 class: center
 ### Coal Imports and Prices in Denmark, 1900-1928
 ![Import and prices](Figures/fig2.jpg)  
 *Source: Norman (1959)*
+
+???
+.large123[**---> 36 <----**] 
 
 ---
 # Peat availability 
@@ -894,7 +961,10 @@ class: center
 knitr::include_graphics("Figures/Map_peat.png")
 ```
 
----
+???
+.large123[**---> 37 <----**] 
+
+<!-----
 # Empirical strategy
 *RQ:*
 - Can the adverse effects of Coal shortage be mitigated by available alternatives? 
@@ -903,7 +973,6 @@ knitr::include_graphics("Figures/Map_peat.png")
 ![Coal](Figures/Peat_use.png)
 ]
 
---
 .pull-right[
 **Strategy:**
 - Influence of peat availability every year $\mathbf{\beta_t}$
@@ -912,20 +981,32 @@ $$MB_{it}= Peat_{it}\mathbf{\beta_t}+\mathbf{z'}_{it}\gamma+FE+\varepsilon_{it}$
 - Alternatives should only matter after shortage
 ]
 
+-->
+
 ---
 # Peat mitigated negative productivity shocks
 ```{r echo=FALSE, out.width="80%", fig.align='center'}
 knitr::include_graphics("Figures/Coal_event.png")
 ```
 
-*Approx 10,786 2010-USD lost for every creamery*
+***Approx 10,786 2010-USD lost for every creamery***
+
+???
+.large123[**---> 37 <----**] 
 
 ---
 # Mechanisms: Survival, investments and efficiency (1/2)
 ![Survival](Figures/Survival.png)
+
+???
+.large123[**---> 38 <----**] 
+
 ---
 # Mechanisms: Survival, investments and efficiency (2/2)
 ![Centrifuges](Figures/Centrifuges.png)
+
+???
+.large123[**---> 38 <----**] 
 
 ---
 # Conclusion
@@ -933,7 +1014,7 @@ knitr::include_graphics("Figures/Coal_event.png")
 - Alternatives are also important beyond their immediate necessity 
 
 ???
-**<----> 43:15 <---->**
+.large123[**---> 39 <----**] 
 
 ---
 # Overview
@@ -951,6 +1032,9 @@ knitr::include_graphics("Figures/Coal_event.png")
 knitr::include_graphics("Figures/Overview EN 3.png")
 ```
 ]
+
+???
+.large123[**---> 40 <----**] 
 
 ---
 # Overview
@@ -970,12 +1054,34 @@ knitr::include_graphics("Figures/Overview EN 4.png")
 ```
 ]
 
+???
+.large123[**---> 41 <----**] 
+
+---
+# Overview
+
+.pull-left[
+- **Chapter 1:** Geo-morpohology mattered for the location of prosperity in 1834 and in the 1100s 
+- **Chapter 2:** Religious conflict drove production loss in the dairy sector 
+- **Chapter 3:** Despite differential approaches to assimilation, labour market outcomes were similar  
+- **Chapter 4:** Diverse access to energy was (is) important
+]
+
+.pull-right[
+**The chapters**
+
+```{r echo=FALSE, out.width="75%", fig.align='left'}
+knitr::include_graphics("Figures/Overview EN.png")
+```
+]
+
+???
+.large123[**---> 41 <----**] 
+
 ---
 # Conclusion: Why are some places wealthy?
 
 .pull-left[
-- If we knew... 
-
 - *What is the role of geography?*
   + Provides market access 
   + Provides energy alternatives 
@@ -983,6 +1089,7 @@ knitr::include_graphics("Figures/Overview EN 4.png")
   + Religious institutions can generate conflict with adverse economic effects 
   + Differential rates of integration might not generate differential occupational outcomes 
   
+
 - **(Fortunately) much more research is needed**
 ]
 
@@ -991,9 +1098,12 @@ knitr::include_graphics("Figures/Overview EN 4.png")
 **The chapters**
 
 ```{r echo=FALSE, out.width="75%", fig.align='left'}
-knitr::include_graphics("Figures/Overview EN 4.png")
+knitr::include_graphics("Figures/Overview EN.png")
 ```
 ]
+
+???
+.large123[**---> 43 <----**] 
 
 ---
 name: apendicies 
@@ -1061,6 +1171,28 @@ name: railways2
 ]
 
 Source: Fertner (2013)
+
+---
+name: MAmath
+# Market Access
+.pull-left[
+Based on cost distance from parishes to harbours: 
+$${MA}_p = \sum_{h \in H} [CostDist(p, h) + 1]^\theta \times W_{p}$$
+- CostDist - Dijkstra's agorithm and 1/10 land/sea ratio 
+- $\theta = -1$  
+- Breach caused new harbours in West Limfjord: $H\rightarrow H^*$
+
+$$MA_{before} = MA_p|H \\
+MA_{after} = MA_p|H^*$$
+Main measure:
+$$\Delta log(MA) = log(MA_{after})-log(MA_{before})$$
+]
+
+.pull-right[
+![Event](Figures/Map.png)
+]
+
+.footnote[[Back](#empstrat1)]
 
 ---
 name: elsinor
@@ -1331,7 +1463,7 @@ knitr::include_graphics("Figures/arch_dummy_buildings.png")
 
 **1657-1720:** General consumption tax in market towns and Dano-Swedish wars boosts timber/grain legal grey zone trade (*skudehandel*) between Thy and Norway.  
 **1814:** Norway becomes Swedish. Illegal trade continues  
-**1834-35:** Overwelmning trade with even larger ships. Coastal watch established. Thisted becomes de facto customs town.  
+**1834-35:** Overwelming trade with even larger ships. Coastal watch established. Thisted becomes de facto customs town.  
 **1837, 1840:** Petitions to the King for formal international trading rights for all market towns  
 
 ]
@@ -1400,6 +1532,23 @@ background-color: #b33d3d
 .pull-right[
 ![Chimney](Figures/Soeholm_mejeri.png)
 ]
+
+# Mechanisms
+.pull-left[
+![DAG](figures/dag_mechanism_wp1.png)
+1. We can test whether it is carried by Sabbatical production itself 
+2. We can test whether there are 'smoking guns' of conflict 
+]
+
+.pull-right[
+**Results**
+- We *cannot* find that Sabbatical production had a negative impact on productivity 
+- We *can* demonstrate indicators of conflict were associated with IM
+]
+
+
+
+
 ---
 # Was Sabbatical production the mechanism behind negative effect of IM? 
 ```{r echo=FALSE, out.width="75%", fig.align='center'}
@@ -1564,6 +1713,7 @@ knitr::include_graphics("Figures/Church_map.png")
 --
 .pull-right[
 **Further work** 
+- Only Midwest
 - Conley errors 
 - Kelly and Conley (2023) estimator
 ]
