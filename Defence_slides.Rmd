@@ -398,16 +398,18 @@ knitr::include_graphics("Figures/All_occupations.png")
 .large123[**---> 15 <----** ]
 
 ---
-### Migration and fertility
+# Did people move there or were more born there?
 .pull-left[
-**People who live in different county than their birth county:**
+### Migration
+*People who live in different county than their birth county:*
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("Figures/born_different.png")
 ```
 ]
 
 .pull-right[
-**Child/women ratio (ch. 1-5 years per f. 15-45):**
+### Fertility
+*Child/women ratio (ch. 1-5 years per f. 15-45):*
 ```{r echo=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("Figures/fertility.png")
 ```
@@ -573,22 +575,15 @@ Carl Moe, kb.dk
   + 11685 observations on 964 creameries
   + Milk, Butter, influence of IM and various controls
 
+
+]
+
+.pull-right[
 **Empirical strategy:** 
 - Milk butter ratio: How much milk does it take to produce a unit of butter?
 
 $$MB_{it}= IM_{it}\beta_1+\mathbf{z}_{it}\gamma+FE+\varepsilon_{it}$$
 $$ln(Butter_{it})= ln(Milk_{it})\beta_1+IM_{it}\beta_2+...$$
-
-
-]
-
-.pull-right[
-
-**Bartik style instruments:**
-- Early IM would cause later IM (it is in the name) 
-1. Carl Moe was semi-randomly appointed to Harboører and Skanderup 
-2. IM in 1890, before our data 
-
 ]
 
 ???
@@ -635,16 +630,20 @@ knitr::include_graphics("Figures/OLS_WP1.png")
 ---
 # Results IV
 .pull-left-wide[
-```{r echo=FALSE, out.width="100%", fig.align='left'}
+```{r echo=FALSE, out.width="90%", fig.align='left'}
 knitr::include_graphics("Figures/IV_WP1.png")
 ```
 ]
 
 .pull-right-narrow[
+**Instruments:**
+- Early IM would cause later IM (it is in the name) 
+1. Carl Moe was semi-randomly appointed to Harboører and Skanderup 
+2. IM in 1890, before our data 
+
+
 **Interpretation**
 - Robust negative association between IM and productivity 
-- Large and meaningful effect size 
-- Neither instrument can be rejected
 
 - **Effect**: ~ -40000 (2010 USD Equiv)
 ]
@@ -1064,7 +1063,7 @@ knitr::include_graphics("Figures/Overview EN 4.png")
 - **Chapter 1:** Geo-morpohology mattered for the location of prosperity in 1834 and in the 1100s 
 - **Chapter 2:** Religious conflict drove production loss in the dairy sector 
 - **Chapter 3:** Despite differential approaches to assimilation, labour market outcomes were similar  
-- **Chapter 4:** Diverse access to energy was (is) important
+- **Chapter 4:** Secondary energy sources matters 
 ]
 
 .pull-right[
@@ -1533,6 +1532,7 @@ background-color: #b33d3d
 ![Chimney](Figures/Soeholm_mejeri.png)
 ]
 
+---
 # Mechanisms
 .pull-left[
 ![DAG](figures/dag_mechanism_wp1.png)

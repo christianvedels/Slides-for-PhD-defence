@@ -379,14 +379,16 @@ name: pop
 .large123[**---&gt; 15 &lt;----** ]
 
 ---
-### Migration and fertility
+# Did people move there or were more born there?
 .pull-left[
-**People who live in different county than their birth county:**
+### Migration
+*People who live in different county than their birth county:*
 &lt;img src="Figures/born_different.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
-**Child/women ratio (ch. 1-5 years per f. 15-45):**
+### Fertility
+*Child/women ratio (ch. 1-5 years per f. 15-45):*
 &lt;img src="Figures/fertility.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ]
@@ -540,22 +542,15 @@ Carl Moe, kb.dk
   + 11685 observations on 964 creameries
   + Milk, Butter, influence of IM and various controls
 
+
+]
+
+.pull-right[
 **Empirical strategy:** 
 - Milk butter ratio: How much milk does it take to produce a unit of butter?
 
 `$$MB_{it}= IM_{it}\beta_1+\mathbf{z}_{it}\gamma+FE+\varepsilon_{it}$$`
 `$$ln(Butter_{it})= ln(Milk_{it})\beta_1+IM_{it}\beta_2+...$$`
-
-
-]
-
-.pull-right[
-
-**Bartik style instruments:**
-- Early IM would cause later IM (it is in the name) 
-1. Carl Moe was semi-randomly appointed to Harboører and Skanderup 
-2. IM in 1890, before our data 
-
 ]
 
 ???
@@ -596,14 +591,18 @@ What about a bad harvest?
 ---
 # Results IV
 .pull-left-wide[
-&lt;img src="Figures/IV_WP1.png" width="100%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="Figures/IV_WP1.png" width="90%" style="display: block; margin: auto auto auto 0;" /&gt;
 ]
 
 .pull-right-narrow[
+**Instruments:**
+- Early IM would cause later IM (it is in the name) 
+1. Carl Moe was semi-randomly appointed to Harboører and Skanderup 
+2. IM in 1890, before our data 
+
+
 **Interpretation**
 - Robust negative association between IM and productivity 
-- Large and meaningful effect size 
-- Neither instrument can be rejected
 
 - **Effect**: ~ -40000 (2010 USD Equiv)
 ]
@@ -999,7 +998,7 @@ class: center
 - **Chapter 1:** Geo-morpohology mattered for the location of prosperity in 1834 and in the 1100s 
 - **Chapter 2:** Religious conflict drove production loss in the dairy sector 
 - **Chapter 3:** Despite differential approaches to assimilation, labour market outcomes were similar  
-- **Chapter 4:** Diverse access to energy was (is) important
+- **Chapter 4:** Secondary energy sources matters 
 ]
 
 .pull-right[
@@ -1022,8 +1021,7 @@ class: center
   + Religious institutions can generate conflict with adverse economic effects 
   + Differential rates of integration might not generate differential occupational outcomes 
   
-- If we knew... 
-  
+
 - **(Fortunately) much more research is needed**
 ]
 
@@ -1455,6 +1453,7 @@ background-color: #b33d3d
 ![Chimney](Figures/Soeholm_mejeri.png)
 ]
 
+---
 # Mechanisms
 .pull-left[
 ![DAG](figures/dag_mechanism_wp1.png)
